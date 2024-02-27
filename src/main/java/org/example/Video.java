@@ -1,13 +1,25 @@
 package org.example;
 
-public class Video extends AbstractMedia  {
-    private String titul;
+public class Video extends AbstractMedia {
     private String reziser;
-    private int delka;
-    private double cena;
 
-    public Video(String titul, String reziser, int delka, double cena) {
-    super(titul, cena, delka);
-    this.reziser = reziser;
-}
+    public Video(String title, String reziser, int length, double price) {
+        super(title, price, length);
+        this.reziser = reziser;
+    }
+
+    @Override
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public int getDelka() {
+        return length;
+    }
 }

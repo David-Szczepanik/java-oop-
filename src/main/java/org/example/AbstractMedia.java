@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class AbstractMedia implements Media {
+public abstract class AbstractMedia {
     protected String title;
     protected double price;
     protected int length;
@@ -11,18 +11,7 @@ public abstract class AbstractMedia implements Media {
         this.length = length;
     }
 
-    @Override
-    public String getTitle() {
-        return title;
-    }
-
-    @Override
-    public double getPrice() {
-        return price;
-    }
-
-    @Override
-    public int getDelka() {
-        return length;
-    }
+    public abstract String getTitle();
+    public abstract double getPrice();
+    public abstract int getDelka();
 }

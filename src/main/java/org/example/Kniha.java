@@ -1,28 +1,26 @@
 package org.example;
 
-public class Kniha implements Media {
-  private String titul;
-  private String autor;
-  private double cena;
+public class Kniha extends AbstractMedia {
+    private String autor;
 
-  public Kniha(String titul, String autor, double cena) {
-    this.titul = titul;
-    this.autor = autor;
-    this.cena = cena;
-  }
+    public Kniha(String title, String autor, double price) {
+        super(title, price, 0);
+        this.autor = autor;
+    }
 
-  public String getTitle() {
-    return titul;
-  }
+    @Override
+    public String getTitle() {
+        return title;
+    }
 
-  public double getPrice() {
-    return cena;
-  }
+    @Override
+    public double getPrice() {
+        return price;
+    }
 
-  @Override
-  public int getDelka() {
-    return 0;
-  }
-
+    @Override
+    public int getDelka() {
+        return length;
+    }
 }
 

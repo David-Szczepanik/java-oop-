@@ -12,13 +12,13 @@ public class Main {
     Video video1 = new Video("Video1", "Reziser1", 120, 200);
     Video video2 = new Video("Video2", "Reziser2", 150, 250);
 
-    Media[] mediaPole = new Media[]{
+    AbstractMedia[] mediaPole = new AbstractMedia[]{
         cd1, cd2, video1, video2
     };
 
-    for (Media media : mediaPole) {
-      System.out.println("Titul: " + media.getTitle());
-      System.out.println("Cena: " + media.getPrice());
+    for (AbstractMedia media : mediaPole) {
+      System.out.println("Titul: " + media.title);
+      System.out.println("Cena: " + media.price);
     }
 
     System.out.println("\n---Knihy Pole---");
@@ -28,12 +28,12 @@ public class Main {
         new Kniha("Kniha3", "Autor3", 350)
     };
     for (Kniha kniha : knihaPole) {
-      System.out.println("Titul: " + kniha.getTitle());
-      System.out.println("Cena: " + kniha.getPrice());
+      System.out.println("Titul: " + kniha.title);
+      System.out.println("Cena: " + kniha.price);
     }
     System.out.println("\n---Kolekce---");
 
-    List<Media> mediaList = new ArrayList<>();
+    List<AbstractMedia> mediaList = new ArrayList<>();
     mediaList.addAll(Arrays.asList(mediaPole));
 
     Video v1 = new Video("video", "reziser", 60, 200);
@@ -44,10 +44,10 @@ public class Main {
     mediaList.add(k1);
 
     double celkovaCena = 0;
-    for (Media media : mediaList) {
-      System.out.println("Titul: " + media.getTitle());
-      System.out.println("Cena: " + media.getPrice());
-      celkovaCena += media.getPrice();
+    for (AbstractMedia media : mediaList) {
+      System.out.println("Titul: " + media.title);
+      System.out.println("Cena: " + media.price);
+      celkovaCena += media.price;
     }
     System.out.println("Celková cena: " + celkovaCena);
   }
