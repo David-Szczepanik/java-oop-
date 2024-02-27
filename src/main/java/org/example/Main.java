@@ -7,13 +7,13 @@ public class Main {
   public static void main(String[] args) {
 
     System.out.println("---CD Video Pole---");
-    Media[] mediaArray = new Media[] {
+    Media[] mediaPole = new Media[] {
     new CD("CD1", "Interpret1", 60, 300),
     new CD("CD2", "Interpret2", 70, 350),
     new Video("Video1", "Reziser1", 120, 200),
     new Video("Video2", "Reziser2", 150, 250)
 };
-    for (Media media : mediaArray) {
+    for (Media media : mediaPole) {
     System.out.println("Titul: " + media.getTitle());
     System.out.println("Cena: " + media.getPrice());
 }
