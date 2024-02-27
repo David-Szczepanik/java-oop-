@@ -1,5 +1,4 @@
 package org.example;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +20,6 @@ public class Main {
       System.out.println("Titul: " + media.getTitle());
       System.out.println("Cena: " + media.getPrice());
     }
-
 
     System.out.println("\n---Knihy Pole---");
     Kniha[] knihaPole = new Kniha[]{
