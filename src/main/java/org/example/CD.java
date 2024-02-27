@@ -15,4 +15,5 @@ public class CD implements Media {
 
   public String getTitle() { return titul; }
     public double getPrice() { return cena; }
+  public int getDelka() {return delka;}
 }

@@ -1,16 +1,28 @@
 package org.example;
 
 public class Kniha implements Media {
-    private String jmeno;
-    private String autor;
-    private double cenaSDph;
+  private String titul;
+  private String autor;
+  private double cena;
 
-    public Kniha(String jmeno, String autor, double cenaSDph) {
-      this.jmeno = jmeno;
-      this.autor = autor;
-      this.cenaSDph = cenaSDph;
-    }
+  public Kniha(String titul, String autor, double cena) {
+    this.titul = titul;
+    this.autor = autor;
+    this.cena = cena;
+  }
 
-    public String getTitle() { return jmeno; }
-    public double getPrice() { return cenaSDph; }
+  public String getTitle() {
+    return titul;
+  }
+
+  public double getPrice() {
+    return cena;
+  }
+
+  @Override
+  public int getDelka() {
+    return 0;
+  }
+
 }
+

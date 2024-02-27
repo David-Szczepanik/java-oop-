@@ -36,6 +36,9 @@ public class Main {
     Video v1 = new Video("video","reziser",60,200);
     Kniha k1 = new Kniha("Kniha1","autor", 250);
 
+
+    System.out.println(cd1.getDelka());
+
     mediaList.add(cd1);
     mediaList.add(v1);
     mediaList.add(k1);
