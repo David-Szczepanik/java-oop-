@@ -1,12 +1,12 @@
 package org.example;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
 
     System.out.println("---CD Video Pole---");
-
     CD cd1 = new CD("CD1", "Interpret1", 60, 300);
     CD cd2 = new CD("CD2", "Interpret2", 70, 350);
     Video video1 = new Video("Video1", "Reziser1", 120, 200);
@@ -34,10 +34,10 @@ public class Main {
     System.out.println("\n---Kolekce---");
 
     List<Media> mediaList = new ArrayList<>();
+    mediaList.addAll(Arrays.asList(mediaPole));
 
     Video v1 = new Video("video", "reziser", 60, 200);
     Kniha k1 = new Kniha("Kniha1", "autor", 250);
-
 
     System.out.println(cd1.getDelka());
 
